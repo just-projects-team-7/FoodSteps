@@ -45,5 +45,3 @@ function PrivacyPolicy() {
               </span></p> <p class="p3"><br/></p></div>
      );
 }
-
-export default PrivacyPolicy;
