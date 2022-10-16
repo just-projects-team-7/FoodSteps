@@ -209,9 +209,9 @@ class HomePage extends Component {
           <div className="wrapper2">
             <div className="popular-links">
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
               <nav>
                 <Link className="link">
