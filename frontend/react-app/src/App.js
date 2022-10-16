@@ -2,21 +2,22 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // IMPORTING PAGES
-import HomePage from './pages/Home';
-import Categories from './pages/Categories';
-import About from './pages/About';
-import ContactUs from './pages/ContactUs';
-import Write from './pages/Write';
-import Page404 from './pages/404';
+import HomePage from "./pages/Home";
+import Categories from "./pages/Categories";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import Write from "./pages/Write";
+import Page404 from "./pages/404";
+import NewPost from "./pages/NewPost";
 
 // IMPORTING COMPONENTS
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
-import NewPost from './pages/NewPost';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 import './App.css';
-const axios = require('axios').default;
+//const axios = require('axios').default;
 class App extends Component {
   state = {
     allCategories: null,
@@ -97,14 +98,22 @@ class App extends Component {
                   element={<Categories categories={this.state.allCategories} />}
                 />
               </Route>
-              <Route path="/about" element={<About />} />
-              <Route path="/contact-us" element={<ContactUs />} />
-              <Route path="/write-for-us" element={<Write />} />
-              <Route path="/newpost" element={<NewPost />} />
-              <Route
-                path="*"
-                element={<Page404 toggleHeadFoot={this.toggleHeadFoot} />}
-              />
+              <Route path="/about" element={
+                <About />
+              } />
+              <Route path="/contact-us" element={
+                <ContactUs />
+              } />
+              <Route path="/write-for-us" element={
+                <Write />
+              } />
+              <Route path="/newpost" element={
+                <NewPost />
+              } />
+              <Route path="/privacy-policy" element={
+                <PrivacyPolicy />
+              } />
+              <Route path="*" element={<Page404 toggleHeadFoot ={this.toggleHeadFoot}/>}/>
             </Routes>
           </div>
           {!this.state.is404 ? <Footer /> : null}
