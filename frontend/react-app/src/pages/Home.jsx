@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 class HomePage extends Component {
@@ -208,29 +209,29 @@ class HomePage extends Component {
           <div className="wrapper2">
             <div className="popular-links">
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
               <nav>
-                <a className="link">
+                <Link className="link">
                   <h3>Is Beans Protein or Carbohydrate?</h3>
-                </a>
+                </Link>
               </nav>
             </div>
           </div>
