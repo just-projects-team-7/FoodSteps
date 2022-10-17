@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import Write from "./pages/Write";
 import Page404 from "./pages/404";
 import NewPost from "./pages/NewPost";
+import LogIn from './components/Login';
 
 // IMPORTING COMPONENTS
 import Header from "./components/Header";
@@ -108,6 +109,9 @@ class App extends Component {
               } />
               <Route path="/newpost" element={
                 <NewPost />
+              } />
+              <Route path="/login" element={
+                <LogIn />
               } />
               <Route path="*" element={<Page404 toggleHeadFoot ={this.toggleHeadFoot}/>}/>
             </Routes>
