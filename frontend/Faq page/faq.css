@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* fonts */
+    --ff-header: BioRhyme;
+    --ff-content: SF Compact Display;
+  
+    /* colours */
+    --clr-white: #FFFFFF;
+    --clr-link: #3633F8;
+    --clr-primary1-100: #5C1010;
+    --clr-primary1-80: #843838;
+    --clr-primary1-50: #AC6060;
+    --clr-primary1-20: #D48888;
+    --clr-primary1-5: #FFC4C4;
+    --clr-neutral-100: #17181C;
+    --clr-neutral-80: #434447;
+    --clr-neutral-50: #858688;
+    --clr-neutral-20: #C9C9CA;
+    --clr-neutral-5: #EAEAEA;
+    --clr-neutral-5-50: #EAEAEA88;
+    --clr-primary2-100: #FFD300;
+    --clr-primary2-80: #FDDA31;
+    --clr-primary2-50: #FAE37A;
+    --clr-primary2-20: #F7EEC4;
+    --clr-primary2-5: #F6F4E9;
+  
+    /* Page Padding */
+    --page-padding: 1rem;
+}
+body{
+    background: #ECEAEA;
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+     letter-spacing: 0.5px;
+     
+}
+
+ .main{
+    background: var(--clr-white);
+    color: #434447;
+     
+ }
+
+.box__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+h3{
+    font-family: 'BioRhyme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #17181C;   
+}
+.box__one{
+    text-align: center;
+    line-height: 28px; 
+    
+}
+
+.box__one p{
+    margin-top: -40px;
+}  
+@media screen and (max-width:600px) {
+    .box__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;      
+    }
+
+    h3{
+        width: 396px;
+        height: 32px;
+    }
+    p{
+        width: 396px;
+       line-height: 24px;
+    }
+    img{
+        width: 357px;
+        line-height: 32px;
+        font-weight: 400;
+        font-size: 24px;
+        
+    }
+    .box__one p{
+        width: 396px;
+        height: 140px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        margin-top: -20px;
+        margin-left: 6.5rem;
+        text-align: justify;
+        
+       
+        
+        
+        
+    }
+    
+}
